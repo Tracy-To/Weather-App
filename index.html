@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link rel="stylesheet" href="style.css"
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="weather-prompt">
     <!-- name of app -->
     <h1>Weather App</h1>
-    <!-- search bar -->
-    <input type="text" id="city" placeholder="Enter city">
-    <!-- search button -->
-    <button onclick="showWeather()">Search</button>
+    <!-- prompt the user to enter a city name -->
+    <form>
+      <input type="text" placeholder="Enter city"/>
+      <!-- search button -->
+      <input type="submit" value="Search"/>
+    </form>
   </div>
   <div id="weather-items">
     <!-- Ex. Picture of sun and clouds -->
-    <img id="picture">
+    <img id="picture" alt="Weather Icon">
     <!-- Ex. 60°F -->
     <div id="temperature"></div>
+    <!-- Ex. Boston -->
+    <div id="city"></div>
     <!-- Ex. Partly cloudy -->
     <div id="description"></div>
     <!-- Shows weather for the next 24 hours -->
