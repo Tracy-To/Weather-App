@@ -1,0 +1,176 @@
+body {
+  background-color: #38b6ff;
+  font-family: 'roboto', sans-serif;
+  /* enable flexbox*/
+  display: flex;
+  /* center items vertically */
+  align-items: center;
+  /* center items horizontally */
+  justify-content: center;
+  /* sets height of the body to 100% of the viewport height (vh), which centers everything in the middle of the page */
+  height: 100vh;
+}
+
+h1 {
+  color: white; 
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#app-container {
+  background: #add8e6;
+  height: 840px;
+  width: 600px;
+  border-radius: 18px;
+}
+
+#weather-prompt, 
+#weather-items {
+  text-align: center;
+}
+
+#weather-prompt input[type="text"] {
+  border: none;
+  font-size: 18px;
+  height: 36px;
+  width: 510px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+#weather-prompt input[type="submit"] {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5); /* makes it half-transparent */
+  border: none;
+  font-size: 18px;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+}
+
+#weather-prompt input[type="text"],
+#weather-prompt input[type="submit"] {
+  border-radius: 12px;
+}
+
+#picture {
+  display: none; /* hides the 'Weather Icon' alt text from pre-loading */
+  width: 100px;
+  height: 100px;
+  margin: auto; /* re-centers the picture */
+}
+
+#temperature,
+#description,
+#city,
+#time {
+  color: white;
+}
+
+#temperature {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+#description {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#city {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#time {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* sliding bar for forecast */
+#forecast {
+  color: black;
+  font-size: 16px;
+  height: 250px; /* sets a height for the forecast container */
+  overflow-y: auto; /* creates a vertical sliding bar when content overflows height */
+  margin-left: 16px;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+  /* most properties are 75% the size of their originals */
+  /* base model for responsive design was the iPhone 14 Pro Max in Google Chrome's Responsive Design */
+
+  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #app-container {
+    height: 630px;
+    width: 360px;
+    border-radius: 13.5px;
+  }
+
+  #weather-prompt input[type="text"] {
+    font-size: 13.5px;
+    height: 27px;
+    width: 306px;
+    padding-left: 7.5px;
+    margin-bottom: 15px;
+  }
+
+  #weather-prompt input[type="submit"] {
+    font-size: 13.5px;
+    padding: 6px 18px;
+    margin-bottom: 15px;
+  }
+
+  #weather-prompt input[type="text"],
+  #weather-prompt input[type="submit"] {
+    border-radius: 9px;
+  }
+
+  #picture {
+    width: 75px;
+    height: 75px;
+  }
+
+  #temperature {
+    font-size: 48px;
+    margin-bottom: 11.25px;
+  }
+
+  #description {
+    font-size: 21px;
+    margin-bottom: 7.5px;
+  }
+  
+  #city {
+    font-size: 21px;
+    margin-bottom: 7.5px;
+  }
+
+  #time {
+    font-size: 12px;
+    margin-bottom: 22.5px;
+  }
+  
+  /* sliding bar for forecast */
+  #forecast {
+    font-size: 12px;
+    height: 187.5px; /* sets a height for the forecast container */
+    overflow-y: auto; /* creates a vertical sliding bar when content overflows height */
+
+    /* only for mobile */
+    width: 90%; /* limits forecast descriptions to only 90% of the width */
+    white-space: nowrap; /* prevents text from going to the next line */
+    overflow-x: auto; /* creates a horizontal sliding bar when content overflows width limit */
+    margin: 0 auto;
+  }
+
+}
+  
