@@ -74,14 +74,14 @@ fetch(forecastApiURL + userInput + '&days=1&aqi=no&alerts=no')
           // check if forecast data and forecast data for the day exists, and then check if at least one day/24 hours of data is avilable
           if (json.forecast && json.forecast.forecastday && json.forecast.forecastday.length > 0) {
 
-            // use the hourly forecast for the first day 
+            // use the hourly forecast for today
             const hourlyForecast = json.forecast.forecastday[0].hour
 
-            // use the first 24 hours that appear
-            const next24Hours = hourlyForecast.slice(0, 24)
+            // use today's 24 hours 
+            const todays24Hours = hourlyForecast.slice(0, 24)
 
             // go through the next 24 hours and create a string with the time, temperature (rounded), and weather description
-            const forecastText = next24Hours.map(hour => `${hour.time}: ${Math.round(hour.temp_f) + "°F"}, ${hour.condition.text}`).join('\n');
+            const forecastText = todays24Hours.map(hour => `${hour.time}: ${Math.round(hour.temp_f) + "°F"}, ${hour.condition.text}`).join('\n');
             document.querySelector('#forecast').innerText = `Today's Forecast:\n\n${forecastText}`;
           }
         },
