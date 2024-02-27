@@ -1,6 +1,6 @@
 # Weather App
 
-# Details
+## Details
 
 I made a basic weather app that one can use to look up the general weather of most cities. The app works by initally prompting the user to enter the name of a city and then having them click the 'search' button directly below. After the user does so, the app will display a list of information based on the city enetered, which includes the following information:
 
