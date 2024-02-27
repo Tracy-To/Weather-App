@@ -21,7 +21,7 @@ I wanted to make a simple weather app that required users to do minimal inputtin
 
 ## Link to live site 
 
-TBD
+(https://creative-khapse-062824.netlify.app)
 
 ## Installation instructions
 
