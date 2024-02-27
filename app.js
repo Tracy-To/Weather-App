@@ -80,7 +80,7 @@ fetch(forecastApiURL + userInput + '&days=1&aqi=no&alerts=no')
             // use today's 24 hours 
             const todays24Hours = hourlyForecast.slice(0, 24)
 
-            // go through the next 24 hours and create a string with the time, temperature (rounded), and weather description
+            // go through today's 24 hours and create a string with the time, temperature (rounded), and weather description
             const forecastText = todays24Hours.map(hour => `${hour.time}: ${Math.round(hour.temp_f) + "°F"}, ${hour.condition.text}`).join('\n');
             document.querySelector('#forecast').innerText = `Today's Forecast:\n\n${forecastText}`;
           }
