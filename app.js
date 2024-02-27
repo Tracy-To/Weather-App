@@ -4,7 +4,7 @@ window.onload = () => {
     e.preventDefault()
     const userInput = document.querySelector('input[type="text"]').value
     const apiURL = 'https://weatherapi-com.p.rapidapi.com/current.json?q=';
-    const forecastApiURL = 'http://api.weatherapi.com/v1/forecast.json?key=62929ddcb4084a30bd1192341242402&q=';
+    const forecastApiURL = 'https://api.weatherapi.com/v1/forecast.json?key=62929ddcb4084a30bd1192341242402&q=';
 
 // Fetch current weather data
   fetch(apiURL + userInput, {
