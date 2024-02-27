@@ -2,7 +2,7 @@
 
 ## Details
 
-I made a basic weather app that one can use to look up the general weather of most cities. The app works by initally prompting the user to enter the name of a city and then having them click the 'search' button directly below. After the user does so, the app will display a list of information based on the city enetered, which includes the following information:
+I made a basic weather app that one can use to look up the general weather of most cities. The app works by initally prompting the user to enter the name of a city and then having them click the 'search' button. After the user does so, the app will display a list of information based on the city entered, which includes the following information:
 
 - a weather icon (that matches the current weather)
 - the current temperature (in Fahrenheit)
@@ -17,7 +17,7 @@ I used HTML, CSS, and Javscript to make this app. I also used the following weat
 
 ## Approach taken
 
-I wanted to make a simple weather app that required users to do minimal inputting and scrolling but could still display some/most of the important weather information users would want to know about. 
+I wanted to make a simple weather app that requires users to do minimal inputting and scrolling but could still display some/most of the important weather information users would want to know about. 
 
 ## Link to live site 
 
